@@ -58,14 +58,14 @@
 								<h2 class="major">Research</h2>
 								<p><b>Current work: Using machine learning to remove stellar activity signals from RVs</b></p>
 								<p>Future large space missions designed to search for biosignatures in the atmospheres of Earth-like exoplanets will operate more efficiently and have a higher chance of success if stars with possible Earth analogs are known before launch. One way to find these Earth-like candidates is with the radial velocity (RV) technique, which measures the Doppler shift of the star's spectral lines as the planet tugs on the star in its orbit. The RV method has been used to discover and characterize planets for decades. As our instruments have become more stable and precis, we have gotten better and better at measuring these tiny shifts, but we have not continued finding smaller and smaller planets with RVs.</p>
-								<img src="images/Radial_velocity.gif" alt="">
+								<img src="images/Radial_velocity.gif" alt="" width="500" >
 								<p> This is primarily because RV method is currently limited by spurious signals introduced by stellar activity (i.e. faculae, starspots). These inhomogenities on the star’s surface introduce shape changes to the spectral lines that have can mimic and hide the RV signals of small planets.</p>
 								<img src="images/spot_anim2.gif" alt="" width="360" >
 								<!--<span class="image main"><img src="images/spot_anim2.gif" alt="" /></span>--> 
 								<p>Previous efforts to solve this problem have focused on carefully filtering out activity signals in time using Gaussian process regression  (e.g. Haywood et al. 2014), but this approach requires high-cadence observations and can be difficult to schedule on telescopes. Instead, we’ve focused on another possible solution: machine learning and neural networks. We separate activity signals from true center-of-mass RV shifts using only changes to the average shape of spectral lines, and no information about when the observations were collected. </p>
-								<span class="image main"><img src="images/CCF_CNN (1).gif" alt="" /></span>
+								<img src="images/CCF_CNN (1).gif" alt="" width="500" >
 								<p>In practice, we can visualize this process with the plot below where the curves in the top panel ae the changes in average line shape for the Sun (Observed with HARPS-N Solar Telescope) and the bottom panel output the corresponding stellar activity prediction produced by the neural network. Both panels are color-coded by the apparent shift due to stellar activity. </p>
-								<span class="image main"><img src="images/Input_to_the_NN_and_output_RV_v2.gif" alt="" /></span>
+								<img src="images/Input_to_the_NN_and_output_RV_v2.gif" alt="" width="500" >
 								<p>Overall, we demonstrated our technique on simulated data, reducing the RV scatter from 82.0 cm/s to 3.1 cm/s , and on approximately 700 observations taken nearly daily over three years with the HARPS-N Solar Telescope, reducing the RV scatter from 1.47 m s/1 to 0.78 m s/1 (a 47% or factor of ~ 1.9 improvement). In the future, these or similar techniques could remove activity signals from observations of stars outside our solar system and eventually help detect habitable-zone Earth-mass exoplanets around Sun-like stars. In this way, improvements in RV precision could significantly accelerate the characterization of habitable zone Earth-sized exoplanets. </p>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>							
 							</article>
