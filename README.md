@@ -1,2 +1,2 @@
-## Zoe de Beurs -- Personal Website
+## Zoë de Beurs -- Personal Website
 
